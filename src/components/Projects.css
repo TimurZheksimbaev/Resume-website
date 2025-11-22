@@ -1,0 +1,197 @@
+.projects {
+  background: var(--bg-primary);
+  border-top: 1px solid var(--border-color);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
+.project-card {
+  background: linear-gradient(135deg, var(--bg-secondary) 0%, rgba(255, 255, 255, 0.9) 100%);
+  padding: 2rem;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, var(--primary-color), var(--secondary-color));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover::before {
+  opacity: 1;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(139, 111, 71, 0.2);
+  border-color: rgba(139, 111, 71, 0.3);
+}
+
+.project-card:last-child {
+  margin-bottom: 0;
+}
+
+.project-card::before {
+  display: none;
+}
+
+.project-card:hover {
+  transform: none;
+}
+
+.project-card.featured {
+  border: none;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.project-icon {
+  display: none;
+}
+
+.project-links {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.project-link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: linear-gradient(135deg, rgba(139, 111, 71, 0.05), rgba(184, 149, 106, 0.05));
+  color: var(--text-secondary);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  border: 1px solid rgba(139, 111, 71, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.project-link::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(139, 111, 71, 0.1);
+  transform: translate(-50%, -50%);
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+.project-link:hover::before {
+  width: 100px;
+  height: 100px;
+}
+
+.project-link svg {
+  width: 18px;
+  height: 18px;
+  position: relative;
+  z-index: 1;
+}
+
+.project-link:hover {
+  background: linear-gradient(135deg, rgba(139, 111, 71, 0.1), rgba(184, 149, 106, 0.1));
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 4px 12px rgba(139, 111, 71, 0.2);
+}
+
+.project-title {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.01em;
+}
+
+.project-description {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  flex: 1;
+  font-size: 0.9375rem;
+  font-weight: 400;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+.tech-badge {
+  padding: 0.375rem 0.875rem;
+  background: linear-gradient(135deg, rgba(139, 111, 71, 0.08), rgba(184, 149, 106, 0.08));
+  color: var(--primary-color);
+  border: 1px solid rgba(139, 111, 71, 0.2);
+  border-radius: 8px;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.tech-badge::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(139, 111, 71, 0.1);
+  transform: translate(-50%, -50%);
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+.tech-badge:hover::before {
+  width: 200px;
+  height: 200px;
+}
+
+.tech-badge:hover {
+  background: linear-gradient(135deg, rgba(139, 111, 71, 0.15), rgba(184, 149, 106, 0.15));
+  border-color: var(--primary-color);
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 4px 12px rgba(139, 111, 71, 0.2);
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    padding-bottom: 3rem;
+  }
+}
