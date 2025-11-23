@@ -1,16 +1,168 @@
-# React + Vite
+# Resume Website - Портфолио Тимура Жексимбаева
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Современный персональный сайт-портфолио с адаптивным дизайном, мультиязычностью и интерактивными элементами.
 
-Currently, two official plugins are available:
+## 🚀 Особенности
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Мультиязычность** - Поддержка русского и английского языков с автоматическим определением языка браузера
+- **Адаптивный дизайн** - Полностью адаптивная верстка для всех устройств
+- **Интерактивные проекты** - Слайдер изображений для каждого проекта с навигацией и свайпами
+- **Скачивание резюме** - Возможность скачать резюме в PDF формате
+- **Плавные анимации** - Современные анимации и переходы
+- **SEO оптимизация** - Оптимизирован для поисковых систем
+- **Современный стек** - React 19, Vite 7
 
-## React Compiler
+## 🛠️ Технологии
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React 19** - UI библиотека
+- **Vite 7** - Сборщик и dev-сервер
+- **CSS3** - Стилизация с CSS переменными
+- **ESLint** - Линтинг кода
 
-## Expanding the ESLint configuration
+## 📦 Установка
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Клонируйте репозиторий:
+```bash
+git clone https://github.com/TimurZheksimbaev/Resume-website.git
+cd Resume-website
+```
+
+2. Установите зависимости:
+```bash
+npm install
+```
+
+3. Запустите dev-сервер:
+```bash
+npm run dev
+```
+
+4. Откройте браузер по адресу `http://localhost:5173`
+
+## 🏗️ Сборка для продакшена
+
+```bash
+npm run build
+```
+
+Собранные файлы будут в папке `dist/`
+
+## 📁 Структура проекта
+
+```
+Resume-website/
+├── public/              # Статические файлы
+│   └── logo.svg
+├── src/
+│   ├── assets/          # Изображения и ресурсы
+│   │   ├── photo.jpg
+│   │   ├── NewResume.pdf
+│   │   └── projects/    # Изображения проектов
+│   ├── components/      # React компоненты
+│   │   ├── About.jsx
+│   │   ├── Contact.jsx
+│   │   ├── Education.jsx
+│   │   ├── Experience.jsx
+│   │   ├── Header.jsx
+│   │   ├── Hero.jsx
+│   │   ├── Projects.jsx
+│   │   ├── ProjectImageSlider.jsx  # Слайдер изображений
+│   │   └── Skills.jsx
+│   ├── contexts/        # React контексты
+│   │   └── LanguageContext.jsx
+│   ├── hooks/           # Кастомные хуки
+│   │   └── useTranslation.js
+│   ├── translations/    # Файлы переводов
+│   │   ├── en.js
+│   │   └── ru.js
+│   ├── App.jsx          # Главный компонент
+│   ├── App.css
+│   ├── main.jsx         # Точка входа
+│   └── index.css        # Глобальные стили
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+## 🎨 Основные компоненты
+
+### Hero
+Главная секция с приветствием, кратким описанием, кнопками действий и социальными ссылками.
+
+### About
+Секция "О себе" с описанием опыта и специализации.
+
+### Experience
+Опыт работы с детальным описанием проектов и достижений.
+
+### Education
+Образование: университет и дополнительные курсы.
+
+### Skills
+Навыки, разделенные по категориям (Frontend, Backend, Tools, Soft Skills).
+
+### Projects
+Портфолио проектов с:
+- Слайдером изображений для каждого проекта
+- Описанием и используемыми технологиями
+- Ссылками на GitHub и live-версии
+
+### Contact
+Контактная информация и способы связи.
+
+## 🌐 Мультиязычность
+
+Проект поддерживает два языка:
+- **Русский** (ru)
+- **Английский** (en)
+
+Язык автоматически определяется по настройкам браузера при первом посещении. Пользователь может переключить язык вручную, и выбор сохраняется в localStorage.
+
+Переводы находятся в:
+- `src/translations/ru.js`
+- `src/translations/en.js`
+
+## 🖼️ Слайдер изображений проектов
+
+Компонент `ProjectImageSlider` предоставляет:
+- Навигацию стрелками влево/вправо
+- Индикаторы точек для быстрого перехода
+- Поддержку свайпов на мобильных устройствах
+- Плавные переходы между изображениями
+
+Для добавления нескольких изображений к проекту:
+```javascript
+{
+  title: 'Project Name',
+  photos: [photo1, photo2, photo3], // Массив изображений
+  // ...
+}
+```
+
+## 📄 Скачивание резюме
+
+В секции Hero есть кнопка для скачивания резюме в PDF формате. Файл резюме находится в `src/assets/NewResume.pdf`.
+
+## 🎯 Скрипты
+
+- `npm run dev` - Запуск dev-сервера
+- `npm run build` - Сборка для продакшена
+- `npm run preview` - Предпросмотр собранной версии
+- `npm run lint` - Проверка кода линтером
+
+## 📝 Лицензия
+
+Этот проект является личным портфолио.
+
+## 👤 Автор
+
+**Тимур Жексимбаев**
+
+- GitHub: [@TimurZheksimbaev](https://github.com/TimurZheksimbaev)
+- Email: tmrzheksimbaev.work@yahoo.com
+- Telegram: [@masterhorny1](https://t.me/masterhorny1)
+
+---
+
+Сделано с ❤️ используя React и Vite
