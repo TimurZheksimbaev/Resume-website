@@ -4,6 +4,7 @@ export const ru = {
     about: 'О себе',
     experience: 'Опыт',
     education: 'Образование',
+    certificates: 'Сертификаты',
     skills: 'Навыки',
     projects: 'Проекты',
     contact: 'Контакты'
@@ -81,6 +82,16 @@ export const ru = {
     backend: 'Backend',
     tools: 'Инструменты',
     softSkills: 'Софт-скиллы'
+  },
+  certificates: {
+    title: 'Сертификаты',
+    download: 'Скачать сертификат',
+    yandex: {
+      title: 'Школа разработки интерфейсов Яндекса',
+      issuer: 'Яндекс',
+      date: 'Сентябрь 2025',
+      description: 'Сертификат участника Летней школы Яндекса по разработке интерфейсов'
+    }
   },
   projects: {
     title: 'Проекты',

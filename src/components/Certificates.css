@@ -1,0 +1,40 @@
+.certificates {
+  background: var(--bg-primary);
+  border-top: 1px solid var(--border-color);
+}
+
+.certificates-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.certificate-item {
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+}
+
+.certificate-item:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: rgba(139, 111, 71, 0.3);
+}
+
+.certificate-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .certificates-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+

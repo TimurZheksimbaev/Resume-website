@@ -47,6 +47,7 @@ const Header = ({ activeSection }) => {
     { id: 'about', label: t.nav.about },
     { id: 'experience', label: t.nav.experience },
     { id: 'education', label: t.nav.education },
+    { id: 'certificates', label: t.nav.certificates },
     { id: 'skills', label: t.nav.skills },
     { id: 'projects', label: t.nav.projects },
     { id: 'contact', label: t.nav.contact },

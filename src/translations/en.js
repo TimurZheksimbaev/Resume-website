@@ -4,6 +4,7 @@ export const en = {
     about: 'About',
     experience: 'Experience',
     education: 'Education',
+    certificates: 'Certificates',
     skills: 'Skills',
     projects: 'Projects',
     contact: 'Contact'
@@ -80,6 +81,16 @@ export const en = {
     backend: 'Backend',
     tools: 'Tools',
     softSkills: 'Soft Skills'
+  },
+  certificates: {
+    title: 'Certificates',
+    download: 'Download Certificate',
+    yandex: {
+      title: 'Yandex School of Interface Development',
+      issuer: 'Yandex',
+      date: 'September 2025',
+      description: 'Certificate of participation in Yandex Summer School of Interface Development'
+    }
   },
   projects: {
     title: 'Projects',
