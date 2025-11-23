@@ -31,16 +31,16 @@ const Projects = () => {
     {
       title: 'Brainwave',
       photos: [brainwavePhoto1, brainwavePhoto2, brainwavePhoto3, brainwavePhoto4],
-      description: 'Лэндинг для ИИ чата с возможностью генерации фото и видео',
+      description: t.projects.brainwave.description,
       technologies: ['React', 'Vite', 'TypeScript', 'Tailwind'],
       link: 'https://brainwave-azure.vercel.app/',
       github: "https://github.com/TimurZheksimbaev/AI-App-Landing-Page",
       featured: true
     },
     {
-      title: "Проект от Яндекс Маркета (Школа разработки интерфейсов Яндекса)",
+      title: t.projects.yandex.title,
       photos: [yandexPhoto1, yandexPhoto2, yandexPhoto3],
-      description: 'Проект от Яндекс Маркета во время Школы разработки интерфейсов Яндекса. Сервис модерации черновиков тарифов (Тарифница)',
+      description: t.projects.yandex.description,
       technologies: ['React', 'Typescript', 'Redux', 'Sass', 'GravityUI'],
       link: null,
       github: null,
@@ -49,7 +49,7 @@ const Projects = () => {
     {
       title: 'DocsNow',
       photos: [docsnowPhoto1, docsnowPhoto2, docsnowPhoto3],
-      description: 'Онлайн редактор текста с возможностью работы в реальном времени с другими людьми',
+      description: t.projects.docsnow.description,
       technologies: ['React', 'Next.js', 'Typescript','Sentry', 'Clerk', 'Liveblocks', 'Tailwind'],
       link: 'https://real-time-online-docs-app.vercel.app/',
       github: 'https://github.com/TimurZheksimbaev/Real-Time-Online-Docs-App',
@@ -58,7 +58,7 @@ const Projects = () => {
     {
       title: 'BearScribes',
       photos: [bearscribesPhoto1, bearscribesPhoto2, bearscribesPhoto3],
-      description: 'Веб приложение-библиотека, вы можете искать книги и добавлять в "Избранное" и многое другое',
+      description: t.projects.bearscribes.description,
       technologies: ['React', 'Next.js', 'Typescript', 'Tailwind'],
       link: 'https://bear-scribes-vercel.vercel.app/',
       github: 'https://github.com/IU-Team-Projects/BearScribes',
@@ -67,7 +67,7 @@ const Projects = () => {
     {
       title: 'CareerPrep AI',
       photos: [careerprepPhoto1, careerprepPhoto2, careerprepPhoto3],
-      description: 'Платформа для подготовки к собеседованию в формате аудиозвонка с ИИ',
+      description: t.projects.careerprep.description,
       technologies: ['React', 'Next.js', 'Typescript', 'Firebase', 'Vapi', 'Tailwind'],
       link: 'https://ai-interview-platform-navy.vercel.app',
       github: 'https://github.com/TimurZheksimbaev/AI-Interview-Platform',
@@ -76,7 +76,7 @@ const Projects = () => {
     {
       title: "Resume website",
       photos: [resumePhoto],
-      description: 'Персональный сайт-портфолио с современным дизайном и анимациями. Адаптивная верстка.',
+      description: t.projects.resume.description,
       technologies: ['React', 'Vite', 'TypeScript'],
       link: '',
       github: 'https://github.com/TimurZheksimbaev/Resume-website',

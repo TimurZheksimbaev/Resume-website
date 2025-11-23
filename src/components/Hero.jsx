@@ -1,9 +1,6 @@
 import './Hero.css'
 import { useTranslation } from '../hooks/useTranslation'
-// import githubIcon from '../assets/github.svg'
-// import emailIcon from '../assets/mail.svg'
-// import phoneIcon from '../assets/phone.svg'
-// import telegramIcon from '../assets/telegram.svg'
+import resumePDF from '../assets/NewResume.pdf'
 
 const Hero = () => {
   const { t } = useTranslation()
@@ -28,6 +25,24 @@ const Hero = () => {
           <div className="hero-buttons">
             <a href="#contact" className="btn btn-primary">
               {t.hero.contactButton}
+            </a>
+            <a 
+              href={resumePDF} 
+              download="Timur_Zheksimbaev_Resume.pdf"
+              className="btn btn-secondary"
+            >
+              <svg 
+                viewBox="0 0 24 24" 
+                fill="none" 
+                stroke="currentColor" 
+                strokeWidth="2"
+                className="btn-icon"
+              >
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="7 10 12 15 17 10"/>
+                <line x1="12" y1="15" x2="12" y2="3"/>
+              </svg>
+              {t.hero.downloadResume}
             </a>
           </div>
           <div className="hero-social">

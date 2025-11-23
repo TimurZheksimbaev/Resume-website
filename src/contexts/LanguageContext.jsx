@@ -10,9 +10,22 @@ export const useLanguage = () => {
   return context
 }
 
+const getBrowserLanguage = () => {
+  const browserLang = navigator.language || navigator.userLanguage
+  
+  if (browserLang.toLowerCase().startsWith('ru')) {
+    return 'ru'
+  }
+  return 'en'
+}
+
 export const LanguageProvider = ({ children }) => {
   const [language, setLanguage] = useState(() => {
-    return localStorage.getItem('language') || 'ru'
+    const savedLanguage = localStorage.getItem('language')
+    if (savedLanguage) {
+      return savedLanguage
+    }
+    return getBrowserLanguage()
   })
 
   useEffect(() => {

@@ -14,6 +14,7 @@ export const en = {
     role: 'Frontend Developer',
     description: 'I create modern web applications using cutting-edge technologies. Passionate about building quality solutions and continuous learning.',
     contactButton: 'Get in Touch',
+    downloadResume: 'Download Resume',
     scrollText: 'Scroll down'
   },
   about: {
@@ -81,7 +82,26 @@ export const en = {
     softSkills: 'Soft Skills'
   },
   projects: {
-    title: 'Projects'
+    title: 'Projects',
+    brainwave: {
+      description: 'Landing page for AI chat with the ability to generate photos and videos'
+    },
+    yandex: {
+      title: 'Project from Yandex Market (Yandex Summer School of Interface Development)',
+      description: 'Project from Yandex Market during the Yandex Summer School of Interface Development. Service for moderation of draft tariffs (Tariffnica)'
+    },
+    docsnow: {
+      description: 'Online text editor with the ability to work in real time with other people'
+    },
+    bearscribes: {
+      description: 'Web application-library, you can search for books and add to "Favorites" and much more'
+    },
+    careerprep: {
+      description: 'Platform for preparing for an interview in the format of an audio call with AI'
+    },
+    resume: {
+      description: 'Personal portfolio website with a modern design and animations. Adaptive layout.'
+    }
   },
   contact: {
     title: 'Contact',
@@ -93,4 +113,3 @@ export const en = {
     footer: 'Author: Timur Zheksimbaev'
   }
 }
-
