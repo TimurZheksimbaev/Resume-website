@@ -21,24 +21,12 @@ const About = () => {
                 <span>{t.about.highlights.frontend}</span>
               </div>
               <div className="highlight-item">
-                <span className="highlight-icon">🔧</span>
-                <span>{t.about.highlights.backend}</span>
-              </div>
-              <div className="highlight-item">
-                <span className="highlight-icon">⚡</span>
-                <span>{t.about.highlights.performance}</span>
-              </div>
-              <div className="highlight-item">
                 <span className="highlight-icon">🤖</span>
                 <span>{t.about.highlights.ai}</span>
               </div>
               <div className="highlight-item">
                 <span className="highlight-icon">⛓</span>
                 <span>{t.about.highlights.blockchain}</span>
-              </div>
-              <div className="highlight-item">
-                <span className="highlight-icon">⚙️</span>
-                <span>{t.about.highlights.devops}</span>
               </div>
             </div>
           </div>

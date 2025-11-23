@@ -306,5 +306,9 @@
     width: 100%;
     max-width: 300px;
   }
+
+  .scroll-indicator {
+    display: none;
+  }
 }
 

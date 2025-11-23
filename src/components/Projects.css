@@ -211,4 +211,8 @@
   .project-card {
     padding-bottom: 3rem;
   }
+
+  .project-image-wrapper {
+    display: none;
+  }
 }
