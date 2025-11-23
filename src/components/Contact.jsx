@@ -1,6 +1,7 @@
 import './Contact.css'
 import { useTranslation } from '../hooks/useTranslation'
 
+
 const Contact = () => {
   const { t } = useTranslation()
 

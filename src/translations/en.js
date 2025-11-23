@@ -11,7 +11,7 @@ export const en = {
   hero: {
     greeting: 'Hi, I\'m',
     name: 'Timur Zheksimbaev',
-    role: 'Full Stack Developer',
+    role: 'Frontend Developer',
     description: 'I create modern web applications using cutting-edge technologies. Passionate about building quality solutions and continuous learning.',
     contactButton: 'Get in Touch',
     scrollText: 'Scroll down'
@@ -22,8 +22,11 @@ export const en = {
     text2: 'Experience includes UI/UX performance optimization, backend development, integration of various LLM models, and implementation of cryptocurrency payment systems',
     highlights: {
       performance: 'Performance',
-      fullstack: 'Fullstack',
-      ai: 'AI Integration'
+      frontend: 'Frontend',
+      backend: 'Backend',
+      ai: 'AI Integration',
+      blockchain: 'Blockchain',
+      devops: 'DevOps'
     }
   },
   experience: {

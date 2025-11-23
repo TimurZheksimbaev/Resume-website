@@ -18,11 +18,11 @@ const About = () => {
             <div className="about-highlights">
               <div className="highlight-item">
                 <span className="highlight-icon">🖥️</span>
-                <span>Frontend</span>
+                <span>{t.about.highlights.frontend}</span>
               </div>
               <div className="highlight-item">
                 <span className="highlight-icon">🔧</span>
-                <span>Backend</span>
+                <span>{t.about.highlights.backend}</span>
               </div>
               <div className="highlight-item">
                 <span className="highlight-icon">⚡</span>
@@ -34,11 +34,11 @@ const About = () => {
               </div>
               <div className="highlight-item">
                 <span className="highlight-icon">⛓</span>
-                <span>Blockchain</span>
+                <span>{t.about.highlights.blockchain}</span>
               </div>
               <div className="highlight-item">
                 <span className="highlight-icon">⚙️</span>
-                <span>DevOps</span>
+                <span>{t.about.highlights.devops}</span>
               </div>
             </div>
           </div>

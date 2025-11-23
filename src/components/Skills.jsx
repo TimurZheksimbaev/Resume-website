@@ -16,8 +16,6 @@ const Skills = () => {
         'Nuxt.js',
         'Sass',
         'Tailwind',
-        "Vite",
-        "Webpack"
       ]
     },
     {

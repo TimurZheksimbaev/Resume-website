@@ -1,32 +1,86 @@
 import './Projects.css'
 import { useTranslation } from '../hooks/useTranslation'
+import ProjectImageSlider from './ProjectImageSlider'
+
+import brainwavePhoto1 from '../assets/projects/brainwave/brainwave1.png'
+import brainwavePhoto2 from '../assets/projects/brainwave/brainwave2.png'
+import brainwavePhoto3 from '../assets/projects/brainwave/brainwave3.png'
+import brainwavePhoto4 from '../assets/projects/brainwave/brainwave4.png'
+
+import docsnowPhoto1 from '../assets/projects/docsnow/docsnow1.png'
+import docsnowPhoto2 from '../assets/projects/docsnow/docsnow2.png'
+import docsnowPhoto3 from '../assets/projects/docsnow/docsnow3.png'
+
+import bearscribesPhoto1 from '../assets/projects/bearscribes/bearscribes1.png'
+import bearscribesPhoto2 from '../assets/projects/bearscribes/bearscribes2.png'
+import bearscribesPhoto3 from '../assets/projects/bearscribes/bearscribes3.png'
+
+import careerprepPhoto1 from '../assets/projects/careerprep/careerprep1.png'
+import careerprepPhoto2 from '../assets/projects/careerprep/careerprep2.png'
+import careerprepPhoto3 from '../assets/projects/careerprep/careerprep3.png'
+
+import yandexPhoto1 from '../assets/projects/yandex/yandex1.png'
+import yandexPhoto2 from '../assets/projects/yandex/yandex2.png'
+import yandexPhoto3 from '../assets/projects/yandex/yandex3.png'
+
+import resumePhoto from '../assets/projects/resume.png'
 
 const Projects = () => {
   const { t } = useTranslation()
   const projects = [
     {
-      title: 'Pavepo',
-      description: 'Веб-платформа для управления проектами и задачами. Современный интерфейс с интуитивной навигацией.',
-      technologies: ['React', 'Node.js', 'PostgreSQL', 'TypeScript'],
-      link: 'https://pavepo.ru/',
+      title: 'Brainwave',
+      photos: [brainwavePhoto1, brainwavePhoto2, brainwavePhoto3, brainwavePhoto4],
+      description: 'Лэндинг для ИИ чата с возможностью генерации фото и видео',
+      technologies: ['React', 'Vite', 'TypeScript', 'Tailwind'],
+      link: 'https://brainwave-azure.vercel.app/',
+      github: "https://github.com/TimurZheksimbaev/AI-App-Landing-Page",
+      featured: true
+    },
+    {
+      title: "Проект от Яндекс Маркета (Школа разработки интерфейсов Яндекса)",
+      photos: [yandexPhoto1, yandexPhoto2, yandexPhoto3],
+      description: 'Проект от Яндекс Маркета во время Школы разработки интерфейсов Яндекса. Сервис модерации черновиков тарифов (Тарифница)',
+      technologies: ['React', 'Typescript', 'Redux', 'Sass', 'GravityUI'],
+      link: null,
       github: null,
       featured: true
     },
     {
-      title: 'Picturino AI',
-      description: 'Приложение с интеграцией искусственного интеллекта для обработки и анализа изображений.',
-      technologies: ['React', 'AI/ML', 'REST API', 'JavaScript'],
-      link: 'https://www.linkedin.com/company/picturino-ai',
-      github: null,
+      title: 'DocsNow',
+      photos: [docsnowPhoto1, docsnowPhoto2, docsnowPhoto3],
+      description: 'Онлайн редактор текста с возможностью работы в реальном времени с другими людьми',
+      technologies: ['React', 'Next.js', 'Typescript','Sentry', 'Clerk', 'Liveblocks', 'Tailwind'],
+      link: 'https://real-time-online-docs-app.vercel.app/',
+      github: 'https://github.com/TimurZheksimbaev/Real-Time-Online-Docs-App',
       featured: true
     },
     {
-      title: 'Portfolio Website',
+      title: 'BearScribes',
+      photos: [bearscribesPhoto1, bearscribesPhoto2, bearscribesPhoto3],
+      description: 'Веб приложение-библиотека, вы можете искать книги и добавлять в "Избранное" и многое другое',
+      technologies: ['React', 'Next.js', 'Typescript', 'Tailwind'],
+      link: 'https://bear-scribes-vercel.vercel.app/',
+      github: 'https://github.com/IU-Team-Projects/BearScribes',
+      featured: true
+    },
+    {
+      title: 'CareerPrep AI',
+      photos: [careerprepPhoto1, careerprepPhoto2, careerprepPhoto3],
+      description: 'Платформа для подготовки к собеседованию в формате аудиозвонка с ИИ',
+      technologies: ['React', 'Next.js', 'Typescript', 'Firebase', 'Vapi', 'Tailwind'],
+      link: 'https://ai-interview-platform-navy.vercel.app',
+      github: 'https://github.com/TimurZheksimbaev/AI-Interview-Platform',
+      featured: true
+    },
+    {
+      title: "Resume website",
+      photos: [resumePhoto],
       description: 'Персональный сайт-портфолио с современным дизайном и анимациями. Адаптивная верстка.',
-      technologies: ['React', 'CSS3', 'Vite', 'JavaScript'],
-      link: '#',
-      github: 'https://github.com/TimurZheksimbaev',
-      featured: false
+      technologies: ['React', 'Vite', 'TypeScript'],
+      link: '',
+      github: 'https://github.com/TimurZheksimbaev/Resume-website',
+      featured: true
     }
   ]
 
@@ -40,6 +94,7 @@ const Projects = () => {
         <div className="projects-grid">
           {projects.map((project, index) => (
             <div key={index} className={`project-card ${project.featured ? 'featured' : ''}`}>
+              <ProjectImageSlider photos={project.photos} title={project.title} />
               <div className="project-header">
                 <div className="project-icon">
                   <svg viewBox="0 0 24 24" fill="currentColor">

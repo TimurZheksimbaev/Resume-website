@@ -11,7 +11,7 @@ export const ru = {
   hero: {
     greeting: 'Привет, я',
     name: 'Тимур Жексимбаев',
-    role: 'Full Stack Developer',
+    role: 'Frontend Developer',
     description: 'Создаю современные веб-приложения с использованием передовых технологий. Увлечен разработкой качественных решений и постоянным обучением.',
     contactButton: 'Связаться',
     scrollText: 'Прокрутите вниз'
@@ -22,8 +22,11 @@ export const ru = {
     text2: 'Опыт включает оптимизацию производительности UI/UX, backend разработку, интеграцию с различными LLM моделями и реализацию криптовалютных платежных систем.',
     highlights: {
       performance: 'Производительность',
-      fullstack: 'Fullstack',
-      ai: 'AI Integration'
+      frontend: 'Фронтенд',
+      backend: 'Бэкенд',
+      ai: 'Интеграция ИИ',
+      blockchain: 'Блокчейн',
+      devops: 'DevOps'
     }
   },
   experience: {
@@ -88,7 +91,7 @@ export const ru = {
     phone: 'Телефон',
     github: 'GitHub',
     telegram: 'Telegram',
-    footer: 'Author: Timur Zheksimbaev'
+    footer: 'Автор: Тимур Жексимбаев'
   }
 }
 
