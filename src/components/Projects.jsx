@@ -19,10 +19,6 @@ import careerprepPhoto1 from '../assets/projects/careerprep/careerprep1.png'
 import careerprepPhoto2 from '../assets/projects/careerprep/careerprep2.png'
 import careerprepPhoto3 from '../assets/projects/careerprep/careerprep3.png'
 
-import yandexPhoto1 from '../assets/projects/yandex/yandex1.png'
-import yandexPhoto2 from '../assets/projects/yandex/yandex2.png'
-import yandexPhoto3 from '../assets/projects/yandex/yandex3.png'
-
 import resumePhoto from '../assets/projects/resume.png'
 
 const Projects = () => {
@@ -39,7 +35,7 @@ const Projects = () => {
     },
     {
       title: t.projects.yandex.title,
-      photos: [yandexPhoto1, yandexPhoto2, yandexPhoto3],
+      photos: [],
       description: t.projects.yandex.description,
       technologies: ['React', 'Typescript', 'Redux', 'Sass', 'GravityUI'],
       link: null,

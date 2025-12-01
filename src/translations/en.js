@@ -99,7 +99,7 @@ export const en = {
     },
     yandex: {
       title: 'Project from Yandex Market (Yandex Summer School of Interface Development)',
-      description: 'Project from Yandex Market during the Yandex Summer School of Interface Development. Service for moderation of draft tariffs (Tariffnica)'
+      description: 'Project from Yandex Market during the Yandex Summer School of Interface Development.'
     },
     docsnow: {
       description: 'Online text editor with the ability to work in real time with other people'
