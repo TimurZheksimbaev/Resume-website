@@ -5,12 +5,28 @@ const Experience = () => {
   const { t } = useTranslation()
   const experiences = [
     {
+      company: 'CryptoStoryBank',
+      position: 'Frontend Developer',
+      period: t.experience.cryptostorybank.period,
+      description: t.experience.cryptostorybank.description,
+      link: 'https://cryptostorybank.com',
+      technologies: ['React', 'TypeScript', 'Redux', 'Admin Dashboard', "Web3", "Crypto", 'Microfrontends']
+    },
+    {
+      company: 'Fora Soft',
+      position: 'Fullstack Developer',
+      period: t.experience.forasoft.period,
+      description: t.experience.forasoft.description,
+      link: 'https://forasoft.com',
+      technologies: ['React', 'Node.js', 'REST API', 'Stripe', 'Webhooks', 'MongoDB', 'TypeScript']
+    },
+    {
       company: 'Pavepo',
       position: 'Frontend Developer',
       period: t.experience.pavepo.period,
       description: t.experience.pavepo.description,
       link: 'https://spb.hh.ru/employer/10180008?hhtmFrom=vacancy',
-      technologies: ['React', 'Redux', 'Typescript', 'Vite', 'Sass']
+      technologies: ['React', 'Redux', 'Typescript', 'Vite', 'Sass', 'Telegram Mini Apps']
     },
     {
       company: 'Picturino AI',
@@ -36,9 +52,9 @@ const Experience = () => {
               <div className="timeline-content">
                 <div className="timeline-header">
                   <h3 className="timeline-position">{exp.position}</h3>
-                  <a 
-                    href={exp.link} 
-                    target="_blank" 
+                  <a
+                    href={exp.link}
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="timeline-company"
                   >

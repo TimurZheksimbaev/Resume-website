@@ -33,8 +33,30 @@ export const en = {
   },
   experience: {
     title: 'Work Experience',
+    cryptostorybank: {
+      period: 'Feb 2025 — Present',
+      description: [
+        'Developing core user-facing features for a crypto banking platform using React, TypeScript, and Redux.',
+        'Building secure and scalable interfaces for banking operations: transactions, wallet management, and KYC processes.',
+        'Implemented real-time data updates and financial dashboards with a strong focus on performance and UX.',
+        'Designed and developed an admin panel for managing users, compliance, and financial operations.',
+        'Integrated crypto wallets and payment infrastructure, improving transaction stability and overall user experience.',
+        'Collaborating closely with backend, product, and security teams in agile processes; reduced UI latency by optimizing architecture, caching, and API interactions.'
+      ],
+    },
+    forasoft: {
+      period: 'Sep 2024 — Feb 2025',
+      description: [
+        'Worked on custom web application development for international clients as a fullstack engineer.',
+        'Delivered end-to-end features using React, Node.js, and REST APIs.',
+        'Integrated Stripe payments: subscriptions, one-time payments, and webhooks.',
+        'Developed backend services and improved API performance.',
+        'Contributed to architecture decisions and built reusable components with a modular code structure.',
+        'Worked under dynamic requirements and tight deadlines.'
+      ],
+    },
     pavepo: {
-      period: '2 years',
+      period: 'Sep 2023 — Aug 2024',
       description: [
         "Led the development of key user interfaces using TypeScript, React, and Redux, designed and configured build architectures for projects with Vite, optimizing application performance and speeding up UI interaction by 30%",
         "Designed and implemented Telegram Mini Apps with full integration of payment systems through TonConnect, developed universal layers for integrating frontend with backend API, including handling asynchronous requests, error management, and caching data",
@@ -43,7 +65,7 @@ export const en = {
       ],
     },
     picturino: {
-      period: '1 year',
+      period: 'Sep 2022 — Aug 2023',
       description: [
         "Designed and implemented a fully functional image editor using React, TypeScript, SASS, and Redux, ensuring high performance and smooth operation. Developed an integration system with AWS S3 for processing over 1000 images daily and an algorithm for automatic generation on Python with ML models, increasing system performance",
         "Integrated LLM and agents (ChatGPT, Claude, Google AI), implemented processing of streaming responses, tokenization, and developed a universal API layer for seamless work with various AI providers"

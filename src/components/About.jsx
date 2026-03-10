@@ -4,7 +4,7 @@ import { useTranslation } from '../hooks/useTranslation'
 const About = () => {
   const { t } = useTranslation()
 
-  return 
+  return (
     <section id="about" className="about">
       <div className="container">
         <h2 className="section-title">
@@ -34,7 +34,7 @@ const About = () => {
         </div>
       </div>
     </section>
-  
+  )
 }
 
 export default About
