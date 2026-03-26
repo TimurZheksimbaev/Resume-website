@@ -143,6 +143,7 @@ export const en = {
     phone: 'Phone',
     github: 'GitHub',
     telegram: 'Telegram',
+    linkedin: 'LinkedIn',
     footer: 'Author: Timur Zheksimbaev'
   }
 }

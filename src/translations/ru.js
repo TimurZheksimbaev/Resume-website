@@ -144,6 +144,7 @@ export const ru = {
     phone: 'Телефон',
     github: 'GitHub',
     telegram: 'Telegram',
+    linkedin: 'LinkedIn',
     footer: 'Автор: Тимур Жексимбаев'
   }
 }
